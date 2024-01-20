@@ -1,0 +1,116 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("hello.gif"); /* Replace 'your-background.gif' with the path to your GIF */
+  background-size: cover;
+  background-position: center;
+  color: #ecf0f1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.5s ease;
+}
+
+.container {
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+  background-color: rgba(
+    44,
+    62,
+    80,
+    0.8
+  ); /* Add some transparency to the background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background-color: #3498db;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #e74c3c;
+  border: none;
+  color: #ecf0f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+#stop-button,
+#prev-button,
+#next-button {
+  background-color: #2ecc71;
+}
+
+#stop-button:hover,
+#prev-button:hover,
+#next-button:hover {
+  background-color: #27ae60;
+}
+
+#mute-button {
+  background-color: #f39c12;
+}
+
+#mute-button:hover {
+  background-color: #d35400;
+}
+
+#bluetooth-button {
+  background-color: #3498db;
+}
+
+#bluetooth-button:hover {
+  background-color: #2980b9;
+}
+
+#volume-up-button,
+#volume-down-button {
+  background-color: #f39c12;
+}
+
+#volume-up-button:hover,
+#volume-down-button:hover {
+  background-color: #d35400;
+}
+
+audio {
+  display: none;
+}
+
+#volume-display {
+  color: #ecf0f1;
+}
+
+#current-volume {
+  font-weight: bold;
+}
+
+/* Add your existing disco ball styles here */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

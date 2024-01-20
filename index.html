@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Music Player</h1>
+      <input type="file" id="file-upload" accept="audio/*" />
+      <button id="prev-button" class="animated-button" disabled>
+        Previous
+      </button>
+      <button id="play-button" class="animated-button">Play</button>
+      <button id="pause-button" class="animated-button" disabled>Pause</button>
+      <button id="stop-button" class="animated-button" disabled>Stop</button>
+      <button id="next-button" class="animated-button" disabled>Next</button>
+      <button id="mute-button" class="animated-button">Mute</button>
+      <button
+        id="bluetooth-button"
+        class="animated-button"
+        onclick="connectBluetooth()"
+      >
+        Connect Bluetooth
+      </button>
+      <button id="volume-up-button" class="animated-button">Volume Up</button>
+      <button id="volume-down-button" class="animated-button">
+        Volume Down
+      </button>
+      <span id="volume-display"
+        >Volume: <span id="current-volume">100</span>%</span
+      >
+      <audio id="audio-player"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
